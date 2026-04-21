@@ -1,3 +1,6 @@
+# TIS Transformer script
+the add_tis.py script is a script that takes a csv with columns transcript_id and TIS_pos containing a ensembl transcript ID and a tis position to be added to the TIS Transformer h5 database between the date and inference step
+
 # Ribotie Pipeline
 
 This repository contains a Nextflow-based pipeline for ribosome profiling data analysis using Ribotie as an ORF caller. The pipeline is organized into several modules, including quality control (QC), alignment, and downstream analysis. Ribotie needs a gpu to fonction.
@@ -9,7 +12,7 @@ This pipeline was designed to run on Digital Research Alliance of Canada's High 
 **Note:** Some scripts (e.g., shell scripts for indexing or alignment) will require modifications to be run on your computing ressources. Please review and update paths, module loads, or command-line options as needed to match your environment.
 
 
-## Structure
+## Pipeline Structure
 
 - `QC/`: Quality control and preprocessing scripts (e.g., `Download_QC_trim.nf`)
 - `Align/`: Alignment scripts and configuration (e.g., `filter_align.nf`, `bowtiie_index.sh`, `star_index.sh`)
