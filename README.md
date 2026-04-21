@@ -26,7 +26,7 @@ This pipeline was designed to run on Digital Research Alliance of Canada's High 
 - Java (required for Nextflow, see `env.yml` for version)
 - Other bioinformatics tools as specified in `env.yml`
 
-## Usage
+## For reproductibility
 
 1. Clone this repository.
 2. Prepare your sample sheet (see `Samplesheet_example/all_human.csv`).
@@ -39,5 +39,5 @@ This pipeline was designed to run on Digital Research Alliance of Canada's High 
 
 ## Contact
 
-For questions or issues, please contact nicolas.provencher@usherbrooke.ca or open an issue in this repo
+For questions or issues related to this repo, please contact nicolas.provencher@usherbrooke.ca or open an issue in this repo
 
