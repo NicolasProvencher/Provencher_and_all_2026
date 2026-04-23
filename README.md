@@ -1,9 +1,9 @@
 # TIS Transformer script
-the add_tis.py script is a script that takes a csv with columns transcript_id and TIS_pos containing a ensembl transcript ID and a tis position to be added to the TIS Transformer h5 database between the date and inference step
+the add_tis.py script is a script that takes a csv with columns transcript_id and TIS_pos containing a ensembl transcript ID and a tis position to be added to the TIS Transformer h5 database between the data and inference step
 
 # Ribotie Pipeline
 
-This repository contains a Nextflow-based pipeline for ribosome profiling data analysis using Ribotie as an ORF caller. The pipeline is organized into several modules, including quality control (QC), alignment, and downstream analysis. Ribotie needs a gpu to fonction.
+This repository contains a Nextflow-based ribosome profiling pipeline using Ribotie as an ORF caller. The pipeline is organized into several modules, including quality control (QC), alignment, and downstream analysis. Ribotie needs a gpu to fonction.
 
 This repository's goal is mainly to share the arguments and details used at each step of the pipeline
 
@@ -15,10 +15,10 @@ This pipeline was designed to run on Digital Research Alliance of Canada's High 
 ## Directory Structure
 Each subdirectories contains a .nf script file and a nextflow.config file for each steps of the pipeline
 
-- the file `QC/` contains the code used to do the Download of the files, the Quality Control and trimming of the Fastq files
+- the folder `QC/` contains the code used to do the Download of the files, the Quality Control and trimming of the Fastq files
 - the folder `Align/`: contains
   - the pipeline script `filter_align.nf` that implements the filtering and transcriptome alignement of the reads,
-  - the files `bowtiie_index.sh` and `star_index.sh` were used to generate the contaminant and human genenome alignement index
+  - the files `bowtiie_index.sh` and `star_index.sh` that were used to generate the contaminant and human genome alignement indexs
 - the folder `Ribotie/`: Contains the ORF calling part of the pipeline though the usage of ribotie, the main pipeline script is `ribotie.nf`)
 - the folder `Samplesheet_example/`: contains the sample sheet used as input for the pipeline with the column `Trim_arg` containing the Args needed to correctly trim the reads for each file determined manually from the QC reports
 - `multiqc_custom_config.yaml` is a file splitting pre and post trim report inside MultiQC 
