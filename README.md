@@ -1,8 +1,8 @@
-This repository accompanies the publication of a paper that generates a MS protein database containing microproteins to be used in routine MS analysis
+This repository accompanies the publication of a paper that generates a MS protein database containing microproteins to be used in routine MS analysis.
 
-It contains the code used to generate active trasncript initiation sites detected from Ribosome Profiling analyses and add them to the training data of the transformer based proteome annotator TIS Transformer
+It contains the code used to identify active transcript initiation sites detected from Ribosome Profiling analyses and add them to the training data of the transformer based proteome annotator TIS Transformer.
 
-This repository's main goal is to share the arguments and details used at each step of the pipeline.
+This repository's main goal is to share the details of the pipeline.
 
 # TIS Transformer script
 the add_tis.py script is a script that takes a csv with columns transcript_id and TIS_pos containing a ensembl transcript ID and a tis position to be added to the TIS Transformer h5 database between the data and inference step
