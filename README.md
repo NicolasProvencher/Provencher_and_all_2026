@@ -1,15 +1,19 @@
+This repository accompanies the publication of a paper that generates a MS protein database containing microproteins to be used in routine MS analysis
+
+It contains the code used to generate active trasncript initiation sites detected from Ribosome Profiling analyses and add them to the training data of the transformer based proteome annotator TIS Transformer
+
+This repository's main goal is to share the arguments and details used at each step of the pipeline.
+
 # TIS Transformer script
 the add_tis.py script is a script that takes a csv with columns transcript_id and TIS_pos containing a ensembl transcript ID and a tis position to be added to the TIS Transformer h5 database between the data and inference step
 
 # Ribotie Pipeline
 
-This repository contains a Nextflow-based ribosome profiling pipeline using Ribotie as an ORF caller. The pipeline is organized into several modules, including quality control (QC), alignment, and downstream analysis. Ribotie needs a gpu to fonction.
-
-This repository's goal is mainly to share the arguments and details used at each step of the pipeline
+The ribosome profiling pipeline was built using Nextflow and uses Ribotie as an ORF caller. The pipeline is organized into several modules, including quality control (QC), alignment, and downstream analysis. Ribotie needs a gpu to fonction.
 
 This pipeline was designed to run on Digital Research Alliance of Canada's High Performance Computing (HPC) environment.
 
-**Note for reproductibility:** Some scripts (e.g., shell scripts for indexing or alignment) will require modifications to be run on your computing ressources. Please review and update paths, module loads, or command-line options as needed to match your environment.
+**Note for reproductibility:** Some scripts (e.g., shell scripts for indexing or alignment) will require modifications to be run on your computing ressources. If you want to use the pipeline, don't forget to review and update paths, module loads, or command-line options as needed to match your environment.
 
 
 ## Directory Structure
