@@ -15,6 +15,12 @@ This pipeline was designed to run on Digital Research Alliance of Canada's High 
 
 **Note for reproductibility:** Some scripts (e.g., shell scripts for indexing or alignment) will require modifications to be run on your computing ressources. If you want to use the pipeline, don't forget to review and update paths, module loads, or command-line options as needed to match your environment.
 
+# MS fastas
+
+The original swissprot fasta and the fasta containing the predicted Microproteins merged with swissprot are also shared
+
+Feels free to use them for you own analyses
+
 
 ## Directory Structure
 Each subdirectories contains a .nf script file and a nextflow.config file for each steps of the pipeline
